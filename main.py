@@ -73,10 +73,10 @@ def load_transitions(file_path):
 
 
 def main():
-    transitions, start_state, accept_states = load_transitions("C:\\Users\\jc811412\\Documents\\códigos\\simulador_automato_pilha\\transitions.txt.txt")
+    transitions, start_state, accept_states = load_transitions("transitions.txt")
     pda = PDA(transitions, start_state, accept_states, accept_by_empty_stack=False)
 
-    with open("C:\\Users\\jc811412\\Documents\\códigos\\simulador_automato_pilha\\patterns.txt.txt", "r") as f:
+    with open("patterns.txt", "r") as f:
         patterns = f.read().split()
 
     output = []
