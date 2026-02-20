@@ -1,0 +1,4 @@
+start q0
+accept qf
+q0 a ε -> q0 A
+q0 b A -> qf ε
